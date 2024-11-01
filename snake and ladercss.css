@@ -1,0 +1,132 @@
+body{
+background-repeat: no-repeat;
+background-size: cover;
+font-family: castellar;
+color: grey;
+}
+table{
+width: 100%;
+height: 100%;
+font-weight: 900;
+border: 2px solid grey;
+border-collapse: collapse;
+color: grey;
+box-shadow: 0 0 10px black;
+border-radius: 5px;
+animation-name: ;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+text-shadow: 0 0 15px white;
+box-shadow: 0 0 7px grey;
+}
+#rld{
+background-color: transparent;
+border-color: grey;
+color: black;
+border-radius: 5px;
+box-shadow: 0 0 10px black;
+padding: 2px;
+}
+@keyframes glow{
+50%{box-shadow: black 0px 0px 15px}
+}
+#spn1{
+background-color: darkorchid;
+color: darkorchid;
+width: 20px;
+box-shadow: 0 0 32px white;
+box-shadow: 0 0 35px white;
+border-radius: 20px;
+text-shadow: 0 0 6px darkorchid;
+}
+#spn2{
+background-color: aqua;
+color: aqua;
+box-shadow: 0 0 32px white;
+box-shadow: 0 0 35px white;
+text-shadow: 0 0 6px aqua;
+width: 20px;
+border-radius: 20px;
+}
+#dice1{
+border-radius: 50px;
+box-shadow: 0 0 10px black;
+width: 100px;
+}
+#dice2{
+border-radius: 50px;
+box-shadow: 0 0 15px black;
+width: 100px;
+}
+#dice3{
+border-radius: 50px;
+width: 100px;
+box-shadow: 0 0 15px black;
+}
+#dice4{
+border-radius: 50px;
+box-shadow: 0 0 15px black;
+width: 100px;
+}
+#dice5{
+border-radius: 70px;
+box-shadow: 0 0 15px black;
+width: 100px;
+}
+#dice6{
+border-radius: 50px;
+box-shadow: 0 0 15px black;
+width: 100px;
+}
+#ladder{
+width: 55px;
+height: 55px;
+border-radius: 15px;
+}
+#sbtad{
+width: 60px;
+background-color: none;
+padding: 4px;
+box-shadow: 0 0 5px white; 
+border-radius: 3px;
+}
+#sbta{
+color: grey;
+padding: 4px;
+border-radius: 3px;
+text-shadow: 0 0 7px white;
+background-color: none;
+text-decoration: none;
+}
+#sbta:active{
+color: black;
+text-shadow: 0 0 7px black;
+}
+#insd{
+width: 500px;
+background-color: none;
+box-shadow: 0 0 7px white;
+padding: 5px;
+border-radius: 5px;
+}
+#ins{
+text-shadow: 0 0 10px white;
+}
+#title{
+text-shadow: 0 0 4px white;
+}
+#rt{
+text-shadow: 0 0 4px white;
+}
+#rld{
+text-shadow: 0 0 2px white;
+color: grey;
+box-shadow: 0 0 8px white;
+}
+#dic{
+text-shadow: 0 0 2px white;
+color: grey;
+}
+
+
+
