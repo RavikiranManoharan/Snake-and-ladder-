@@ -474,6 +474,8 @@ function dice1()
 		
 		result.textContent="Player one Won"
 		
+		var btn1 = document.getElementById("rld").style.display="none";
+		
 		
 		var tvar1 = 100-ran
 				
@@ -1024,6 +1026,8 @@ function dice2()
 		var result = document.getElementById("rt")
 		
 		result.textContent="Player two Won"
+		
+		var btn1 = document.getElementById("rld").style.display="none";
 		
 		
 		
