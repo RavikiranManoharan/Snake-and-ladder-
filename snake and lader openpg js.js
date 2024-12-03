@@ -1,7 +1,6 @@
 function spm()
 {
-	window.location.href=""
-	
+	window.location.href="snake and ladder play one.html"
 }
 
 function tpm()
