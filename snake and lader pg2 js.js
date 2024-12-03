@@ -552,73 +552,55 @@ function dice2()
 {
 	var rann=Math.floor((Math.random()*6)+1)
 
-	console.log("dcice2")
+	console.log(rann)
 	
 	
 	if(rann==1)
 	{
-		
 		var d1 = document.getElementById("dice1").style.display="block";
 		
 		setTimeout(()=>{
-			
-			
 			var d1 = document.getElementById("dice1").style.display="none";
 		},1100);
 		
 	}
 	else if(rann==2)
 	{
-		
 		var d1 = document.getElementById("dice2").style.display="block";
 		
 		setTimeout(()=>{
-		
-			
 			var d1 = document.getElementById("dice2").style.display="none";
 		},1100);
 	}
 	else if(rann==3)
 	{
-		
 		var d1 = document.getElementById("dice3").style.display="block";
 		
 		setTimeout(()=>{
-		
-			
 			var d1 = document.getElementById("dice3").style.display="none";
 		},1100);
 	}
 	else if(rann==4)
 	{
-		
 		var d1 = document.getElementById("dice4").style.display="block";
 		
 		setTimeout(()=>{
-			
-			
 			var d1 = document.getElementById("dice4").style.display="none";
 		},1100);
 	}
 	else if(rann==5)
 	{
-		
 		var d1 = document.getElementById("dice5").style.display="block";
 		
 		setTimeout(()=>{
-		
-			
 			var d1 = document.getElementById("dice5").style.display="none";
 		},1100);
 	}
 	else if(rann==6)
 	{
-		
 		var d1 = document.getElementById("dice6").style.display="block";
 		
 		setTimeout(()=>{
-		
-			
 			var d1 = document.getElementById("dice6").style.display="none";
 		},1100);
 	}
@@ -647,7 +629,7 @@ function dice2()
 		
 		pyr2=23
 		
-		window.alert("Computer got a ladder from 2 to 23");
+		window.alert("player two got a ladder from 2 to 23");
 		
 		var tss = document.getElementById("23")
 
@@ -675,7 +657,7 @@ function dice2()
 		
 		pyr2=45
 		
-		window.alert("Computer got a ladder from 6 to 45");
+		window.alert("player two got a ladder from 6 to 45");
 		
 		var tss = document.getElementById("45")
 
@@ -707,7 +689,7 @@ function dice2()
 		
 		pyr2=59
 		
-		window.alert("Computer got a ladder from 20 to 59");
+		window.alert("player two got a ladder from 20 to 59");
 		
 		var tss = document.getElementById("59")
 
@@ -735,7 +717,7 @@ function dice2()
 		
 		pyr2=72
 		
-		window.alert("Computer got a ladder from 52 to 72");
+		window.alert("player two got a ladder from 52 to 72");
 		
 		var tss = document.getElementById("72")
 
@@ -764,7 +746,7 @@ function dice2()
 		
 		pyr2=96
 		
-		window.alert("Computer got a ladder from 57 to 96");
+		window.alert("player two got a ladder from 57 to 96");
 		
 		var tss = document.getElementById("96")
 
@@ -793,7 +775,7 @@ function dice2()
 		
 		pyr2=92
 		
-		window.alert("Computer got a ladder from 77 to 92");
+		window.alert("player two got a ladder from 77 to 92");
 		
 		var tss = document.getElementById("92")
 
@@ -829,7 +811,7 @@ function dice2()
 		
 		pyr2=17
 		
-		window.alert("Oops..! Computer got a bite (from 43 to 17)");
+		window.alert("Oops..! player two got a bite (from 43 to 17)");
 		
 		var tss = document.getElementById("17")
 
@@ -859,7 +841,7 @@ function dice2()
 		
 		pyr2=5
 		
-		window.alert("Oops..! Computer got a bite (from 50 to 5)");
+		window.alert("Oops..! player two got a bite (from 50 to 5)");
 		
 		var tss = document.getElementById("5")
 
@@ -888,7 +870,7 @@ function dice2()
 		
 		pyr2=8
 		
-		window.alert("Oops..! Computer got a bite (from 56 to 8)");
+		window.alert("Oops..! player two got a bite (from 56 to 8)");
 		
 		var tss = document.getElementById("8")
 
@@ -916,7 +898,7 @@ function dice2()
 		
 		pyr2=15
 		
-		window.alert("Oops..! Computer got a bite (from 73 to 15)");
+		window.alert("Oops..! player two got a bite (from 73 to 15)");
 		
 		var tss = document.getElementById("15")
 
@@ -945,7 +927,7 @@ function dice2()
 		
 		pyr2=58
 		
-		window.alert("Oops..! Computer got a bite (from 84 to 58)");
+		window.alert("Oops..! player two got a bite (from 84 to 58)");
 		
 		var tss = document.getElementById("58")
 
@@ -974,7 +956,7 @@ function dice2()
 		
 		pyr2=49
 		
-		window.alert("Oops..! Computer got a bite (from 87 to 49)");
+		window.alert("Oops..! player two got a bite (from 87 to 49)");
 		
 		var tss = document.getElementById("49")
 
@@ -1003,7 +985,7 @@ function dice2()
 		
 		pyr2=40
 		
-		window.alert("Oops..! Computer got a bite (from 98 to 40)");
+		window.alert("Oops..! player two got a bite (from 98 to 40)");
 		
 		var tss = document.getElementById("40")
 
@@ -1031,10 +1013,10 @@ function dice2()
 	{
 		var result = document.getElementById("rt")
 		
-		result.textContent="Computer Won"
+		result.textContent="Player two Won"
 		
 		var btn1 = document.getElementById("rld").style.display="none";
-	
+		
 		
 		
 		var tvar11 = 100-rann
@@ -1058,8 +1040,7 @@ function dice2()
 
 		ts2 = ts.getElementsByTagName("span")
 		
-		ts2[1].style.display="block";
-	
+		ts2[1].style.display="block";	
 	}
 	
 	
@@ -1121,7 +1102,6 @@ function dice2()
 	*/
 	
 }
-
 function playa()
 {
 	
