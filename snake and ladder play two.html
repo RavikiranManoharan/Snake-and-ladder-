@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Snake and ladder</title>
-		<link id="icn" rel="shortcut icon" type="x-icon" href="ladder_1-removebg-preview.png">
-		<script src="snake and lader pg2 js.js"></script>
-		<!--<script src="D:\html\snake and laderjs.js" ></script>-->
-		<link rel="stylesheet" type="text/css" href="snake and ladercss.css">
-		<link rel="stylesheet" type="text/css" href="snake and ladder pg2css.css">
+		<title>game</title>
 	</head>
 	
-	<body background="aesthetic-desktop-wallpaper.avif">
+	<body background="C:\Users\ravik\OneDrive\Desktop\html\images.jpeg">
 	<!--<body background="D:\html\snake and ladder\background1.jfif">-->
+	
+	
+		<script src="C:\Users\ravik\OneDrive\Desktop\html\snake and ladder js.js"></script>
+		<link rel="stylesheet" type="text/css" href="C:\Users\ravik\OneDrive\Desktop\html\snake and ladder css.css">
 		
-		<br><br><br>
+		<br>
+		<br>
+		<br>
 		
 		<center>
 		<h1 id="title">Snake and Ladder</h1>
-		
-    <br><br>
-		
-    <div id="insd" style="display: none">
-			<h4 id="ins" style="display: none">Give a 5s time space between each roll or else the game might get crashed <br><br> Player One  <span id="spn1" style="display: block">O</span> <br> Player Two  <span id="spn2" style="display: block">O</span> </h4>
-		</div>
-		
-    <br>
-	
-    <div id="sbtad">
+		<br>
+		<br>
+			<h2>Two player</h2>
+		<br>
+		<br>
+		<div id="sbtad">
 		<a id="sbta" href="#" onmouseover="hovera()" onmouseout="mout()" onclick="getintoinfo()">INSTR..</a>
 		</div>
+		<br>
+		<br>
+		<div id="insd" style="display: none">
+			<h4 id="ins" style="display: none">Give a 5s time space between each roll or else the game might get crashed <br><br> Player One  <span id="spn1" style="display: block">O</span> <br> Player Two  <span id="spn2" style="display: block">O</span></h4>
+		</div>
+		<br>
+		<button id="cls" style="display: none" onclick="cls()">Close</button>
+		<br>
+		<br>
+		<br>
+		<br>
 		
-    <br><br><br><br><br>
-		
-    <div id="main">
+		<div id="main">
 		<img src="D:\html\snake and ladder\snake and ladder.jpg" style="display: none" id="mimg">
-		<table border="5" cellpadding="30">
+		<table id="tbl" border="5" cellpadding="30">
 			<tr id="row-">
 				<td id="100">100 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="99">99 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="98">&nbsp; &nbsp; 98 &nbsp; (snake) &nbsp; <img id="ladder" src="snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="98">&nbsp; &nbsp; 98 &nbsp; (snake) &nbsp; <img id="ladder" src="D:\html\snake and ladder\snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="97">97 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="96">96 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="95">95 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
@@ -50,10 +56,10 @@
 				<td id="81">81 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="82">82 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="83">83 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="84">&nbsp; &nbsp; 84 &nbsp; (snake) &nbsp; <img id="ladder" src="snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="84">&nbsp; &nbsp; 84 &nbsp; (snake) &nbsp; <img id="ladder" src="D:\html\snake and ladder\snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="85">85 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="86">86 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="87">&nbsp; &nbsp; 87 &nbsp; (snake) &nbsp; <img id="ladder" src="snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="87">&nbsp; &nbsp; 87 &nbsp; (snake) &nbsp; <img id="ladder" src="D:\html\snake and ladder\snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="88">88 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="89">89 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="90">90 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
@@ -66,9 +72,9 @@
 				<td id="76">76 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="75">75 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="74">74 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="73">&nbsp; &nbsp; 73 &nbsp; (snake) &nbsp; <img id="ladder" src="snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="73">&nbsp; &nbsp; 73 &nbsp; (snake) &nbsp; <img id="ladder" src="D:\html\snake and ladder\snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="72">72 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="71">&nbsp; &nbsp; 71 &nbsp; (ladder) &nbsp; <img id="ladder" src="ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="71">&nbsp; &nbsp; 71 &nbsp; (ladder) &nbsp; <img id="ladder" src="D:\html\snake and ladder\ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 			</tr>
 			<tr id="row-">
 				<td id="61">61 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
@@ -86,25 +92,25 @@
 				<td id="60">60 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="59">59 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="58">58 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="57">&nbsp; &nbsp; 57 &nbsp; (ladder) &nbsp; <img id="ladder" src="ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="56">&nbsp; &nbsp; 56 &nbsp; (snake) &nbsp; <img id="ladder" src="snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="57">&nbsp; &nbsp; 57 &nbsp; (ladder) &nbsp; <img id="ladder" src="D:\html\snake and ladder\ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="56">&nbsp; &nbsp; 56 &nbsp; (snake) &nbsp; <img id="ladder" src="D:\html\snake and ladder\snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="55">55 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="54">54 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="53">53 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="52">&nbsp; &nbsp; 52 &nbsp; (ladder) &nbsp; <img id="ladder" src="ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="52">&nbsp; &nbsp; 52 &nbsp; (ladder) &nbsp; <img id="ladder" src="D:\html\snake and ladder\ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="51">51 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 			</tr>
 			<tr id="row-">
 				<td id="41">41 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="42">42 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="43">&nbsp; &nbsp; 43 &nbsp; (snake) &nbsp; <img id="ladder" src="snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="43">&nbsp; &nbsp; 43 &nbsp; (snake) &nbsp; <img id="ladder" src="D:\html\snake and ladder\snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="44">44 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="45">45 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="46">46 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="47">47 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="48">48 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="49">49 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="50">&nbsp; &nbsp; 50 &nbsp; (snake) &nbsp; <img id="ladder" src="snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="50">&nbsp; &nbsp; 50 &nbsp; (snake) &nbsp; <img id="ladder" src="D:\html\snake and ladder\snake-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 			</tr>
 			<tr id="row-">
 				<td id="40">40 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
@@ -131,7 +137,7 @@
 				<td id="30">30 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 			</tr>
 			<tr id="row-">
-				<td id="20">&nbsp; &nbsp; 20 &nbsp; (ladder) &nbsp; <img id="ladder" src="ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="20">&nbsp; &nbsp; 20 &nbsp; (ladder) &nbsp; <img id="ladder" src="D:\html\snake and ladder\ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="19">19 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="18">18 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="17">17 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
@@ -144,11 +150,11 @@
 			</tr>
 			<tr id="row-">
 				<td id="1">1 &nbsp; <span id="spn1" style="display: block">O</span> &nbsp; <span id="spn2" style="display: block">O</span> </td>
-				<td id="2">&nbsp; &nbsp; 2 &nbsp; (ladder) &nbsp; <img id="ladder" src="ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="2">&nbsp; &nbsp; 2 &nbsp; (ladder) &nbsp; <img id="ladder" src="D:\html\snake and ladder\ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="3">3 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="4">4 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="5">5 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
-				<td id="6">&nbsp; &nbsp; 6 (ladder) &nbsp; <img id="ladder" src="ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
+				<td id="6">&nbsp; &nbsp; 6 (ladder) &nbsp; <img id="ladder" src="D:\html\snake and ladder\ladder_1-removebg-preview.png"> &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="7">7 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="8">8 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
 				<td id="9">9 &nbsp; <span id="spn1" style="display: none">O</span> &nbsp; <span id="spn2" style="display: none">O</span> </td>
@@ -157,22 +163,34 @@
 			
 		</table>
 		</div>
-		
-    <br><br>
-		
-    <center>
+		<br>
+		<br>
+		<center>
 			<h3 id="dic" style="font-weight: 900">Dice</h3>
 		</center>
-		<button id="rld" onclick="dice1()">Player</button>
+		<button id="rld" onclick="testp1()"  >Player one </button> &nbsp;	
+		<button id="rld" onclick="testp2()" >Player two</button> &nbsp;
 	
-		<br><br>
+		<br>
+		<br>
 		
-		<img id="dice1" style="display: none" src="dice 1.png">
-		<img id="dice2" style="display: none" src="dice 2.png">
-		<img id="dice3" style="display: none" src="dice 3.png">
-		<img id="dice4" style="display: none" src="dice 4.png">
-		<img id="dice5" style="display: none" src="dice 5.jfif">
-		<img id="dice6" style="display: none" src="dice 6.png">		
+		<img id="dice1" style="display: none" src="D:\html\snake and ladder\dice 1.png">
+		<img id="dice2" style="display: none" src="D:\html\snake and ladder\dice 2.png">
+		<img id="dice3" style="display: none" src="D:\html\snake and ladder\dice 3.png">
+		<img id="dice4" style="display: none" src="D:\html\snake and ladder\dice 4.png">
+		<img id="dice5" style="display: none" src="D:\html\snake and ladder\dice 5.jfif">
+		<img id="dice6" style="display: none" src="D:\html\snake and ladder\dice 6.png">		
+		
+		
+		<audio controls hidden >
+			<source id="aup" src="D:\html\snake and ladder\Slide Whistle Up - Sound Effect(HD).mp3" type="audio/mp3">
+		</audio>
+		
+		<audio controls hidden>
+			<source id="adown" src="D:\html\snake and ladder\Comedy Slide Whistle Down.mp3">
+		</audio>
+		
+		
 		
 		<h2 id="rt"></h2>
 		
