@@ -6,5 +6,5 @@ function spm()
 
 function tpm()
 {
-	window.location.href="snake and lader.html"
+	window.location.href="snake and ladder play two.html"
 }
