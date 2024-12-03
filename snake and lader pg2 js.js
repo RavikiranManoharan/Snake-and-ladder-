@@ -98,6 +98,8 @@ function dice1()
 		//console.log(tts)
 		
 		var tts1 = tts.getElementsByTagName("span")
+
+		console.log(tts1)
 		
 		tts1[0].style.display="none";
 
