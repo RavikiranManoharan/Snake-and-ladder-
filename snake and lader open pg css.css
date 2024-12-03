@@ -1,3 +1,6 @@
+.element{
+background-size: 100% auto;
+}
 #ladder{
 animation-name: bloop,bloop2;
 animation-duration: 2s;
