@@ -532,6 +532,8 @@ function dice1()
 
 function tout()
 {
+	console.log("tout")
+	
 	pc1++
 	
 	console.log("test successful")
@@ -548,7 +550,7 @@ function dice2()
 {
 	var rann=Math.floor((Math.random()*6)+1)
 
-	console.log(rann)
+	console.log("dcice2")
 	
 	
 	if(rann==1)
