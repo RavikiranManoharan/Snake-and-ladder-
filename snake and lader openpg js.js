@@ -1,10 +1,9 @@
 function spm()
 {
-	window.location.href="snake and ladder play one.html"
-	
+	window.location.href="snake and ladder play two.html"
 }
 
 function tpm()
 {
-	window.location.href="snake and ladder play two.html"
+	window.location.href="snake and ladder play one.html"
 }
