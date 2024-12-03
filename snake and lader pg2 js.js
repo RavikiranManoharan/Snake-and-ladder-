@@ -557,13 +557,11 @@ function dice2()
 	
 	if(rann==1)
 	{
-		var c = document.getElementById("comp").style.display="block";
 		
 		var d1 = document.getElementById("dice1").style.display="block";
 		
 		setTimeout(()=>{
 			
-			var c = document.getElementById("comp").style.display="none";
 			
 			var d1 = document.getElementById("dice1").style.display="none";
 		},1100);
@@ -571,65 +569,55 @@ function dice2()
 	}
 	else if(rann==2)
 	{
-		var c = document.getElementById("comp").style.display="block";
 		
 		var d1 = document.getElementById("dice2").style.display="block";
 		
 		setTimeout(()=>{
-			
-			var c = document.getElementById("comp").style.display="none";
+		
 			
 			var d1 = document.getElementById("dice2").style.display="none";
 		},1100);
 	}
 	else if(rann==3)
 	{
-		var c = document.getElementById("comp").style.display="block";
 		
 		var d1 = document.getElementById("dice3").style.display="block";
 		
 		setTimeout(()=>{
-			
-			var c = document.getElementById("comp").style.display="none";
+		
 			
 			var d1 = document.getElementById("dice3").style.display="none";
 		},1100);
 	}
 	else if(rann==4)
 	{
-		var c = document.getElementById("comp").style.display="block";
 		
 		var d1 = document.getElementById("dice4").style.display="block";
 		
 		setTimeout(()=>{
 			
-			var c = document.getElementById("comp").style.display="none";
 			
 			var d1 = document.getElementById("dice4").style.display="none";
 		},1100);
 	}
 	else if(rann==5)
 	{
-		var c = document.getElementById("comp").style.display="block";
 		
 		var d1 = document.getElementById("dice5").style.display="block";
 		
 		setTimeout(()=>{
-			
-			var c = document.getElementById("comp").style.display="none";
+		
 			
 			var d1 = document.getElementById("dice5").style.display="none";
 		},1100);
 	}
 	else if(rann==6)
 	{
-		var c = document.getElementById("comp").style.display="block";
 		
 		var d1 = document.getElementById("dice6").style.display="block";
 		
 		setTimeout(()=>{
-			
-			var c = document.getElementById("comp").style.display="none";
+		
 			
 			var d1 = document.getElementById("dice6").style.display="none";
 		},1100);
