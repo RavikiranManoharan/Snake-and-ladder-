@@ -3,8 +3,6 @@ background-repeat: no-repeat;
 background-size: cover;
 font-family: castellar;
 color: grey;
-display: flex;
-flex-wrap: wrap;
 }
 table{
 width: 100%;
