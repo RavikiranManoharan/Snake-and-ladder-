@@ -1,17 +1,20 @@
+//single player mode
+
+//shows the position of the player one
 var pyr1 = 0
 
+//shows the position of the player two
 var pyr2 = 0
 
+//verifies the turn of the players
 var pc1 = 1
 
+//function for dice of player
 function dice1()
 {
 	
 	var ran=Math.floor((Math.random()*6)+1)
 
-	console.log("random",ran)
-	
-	console.log(pyr1)
 	
 	if(ran==1)
 	{
@@ -65,12 +68,10 @@ function dice1()
 	
 	pyr1+=ran
 	
-	//console.log(pyr1)
-	
+	//defines the previous position of the player
 	pre = pyr1-ran
 	
-	//console.log(pre)
-	
+	//setting time out for delay
 	setTimeout(()=>{
 	
 	var one = document.getElementById("1")
@@ -80,41 +81,47 @@ function dice1()
 	one1[0].style.display="none";
 	
 	
+	//conditional statements for placing the pieces
 	if(pyr1==2)
 	{
 		
 		pyr1=23
 		
 		window.alert("player got a ladder from 2 to 23");
-	
+		
+		//selecting the cell 23 for placing the piece
 		var ts = document.getElementById("23")
-
+		
+		//selecting the span tag within the cell 23
 		ts2 = ts.getElementsByTagName("span")
 		
+		//indexing the span tag since we have two span tags (i.e. one for player and another for computer)
 		ts2[0].style.display="block";	
 		
+		//selecting the cell occupied by the piece previously 
 		var tts = document.getElementById(pre)
 		
-		//console.log(tts)
-		
+		//selecting the span tag within the previous cell
 		var tts1 = tts.getElementsByTagName("span")
-
-		console.log(tts1)
 		
+		//indexing the span tag as did before
 		tts1[0].style.display="none";
-
+		
+		
+		//reconfirmation for avoiding mistakes
 		var ts = document.getElementById("23")
 
 		ts2 = ts.getElementsByTagName("span")
 		
 		ts2[0].style.display="block";	
 		
-		
+		/*
 		const audio = document.getElementById("aup");
 		
 		audio.volume=1;
 		
 		audio.play();
+		*/
 		
 	}
 	else if(pyr1==6)
@@ -132,8 +139,6 @@ function dice1()
 		
 		var tts = document.getElementById(pre)
 		
-		//console.log(tts)
-		
 		var tts1 = tts.getElementsByTagName("span")
 		
 		tts1[0].style.display="none";
@@ -144,20 +149,19 @@ function dice1()
 		
 		ts2[0].style.display="block";
 		
+		/*
 		var audio = document.getElementById("aup")
 		
 		audio.muted=false
 		
 		audio.play();
-		
+		*/
 		
 	}
 	else if(pyr1==20)
 	{
 			
 		var tvar1 = 20-ran
-		
-		console.log("tvar1",tvar1)
 			
 		pyr1=59
 		
@@ -480,8 +484,6 @@ function dice1()
 		
 		var tvar11 = 100-ran
 		
-		console.log(tvar11)
-		console.log(pyr2)
 				
 		var ts = document.getElementById("100")
 
@@ -532,13 +534,11 @@ function dice1()
 		tout()
 }
 
+
+//delay function that calls the dice function of computer after a delay
 function tout()
 {
-	console.log("tout")
-	
 	pc1++
-	
-	console.log("test successful")
 
 	setTimeout(()=>{
 			
@@ -547,60 +547,88 @@ function tout()
 	},2500);
 }
 
-
+//function for dice of computer
 function dice2()
 {
 	var rann=Math.floor((Math.random()*6)+1)
-
-	console.log(rann)
 	
 	
 	if(rann==1)
 	{
+		var c = document.getElementById("comp").style.display="block";
+		
 		var d1 = document.getElementById("dice1").style.display="block";
 		
 		setTimeout(()=>{
+			
+			var c = document.getElementById("comp").style.display="none";
+			
 			var d1 = document.getElementById("dice1").style.display="none";
 		},1100);
 		
 	}
 	else if(rann==2)
 	{
+		var c = document.getElementById("comp").style.display="block";
+		
 		var d1 = document.getElementById("dice2").style.display="block";
 		
 		setTimeout(()=>{
+			
+			var c = document.getElementById("comp").style.display="none";
+			
 			var d1 = document.getElementById("dice2").style.display="none";
 		},1100);
 	}
 	else if(rann==3)
 	{
+		var c = document.getElementById("comp").style.display="block";
+		
 		var d1 = document.getElementById("dice3").style.display="block";
 		
 		setTimeout(()=>{
+			
+			var c = document.getElementById("comp").style.display="none";
+			
 			var d1 = document.getElementById("dice3").style.display="none";
 		},1100);
 	}
 	else if(rann==4)
 	{
+		var c = document.getElementById("comp").style.display="block";
+		
 		var d1 = document.getElementById("dice4").style.display="block";
 		
 		setTimeout(()=>{
+			
+			var c = document.getElementById("comp").style.display="none";
+			
 			var d1 = document.getElementById("dice4").style.display="none";
 		},1100);
 	}
 	else if(rann==5)
 	{
+		var c = document.getElementById("comp").style.display="block";
+		
 		var d1 = document.getElementById("dice5").style.display="block";
 		
 		setTimeout(()=>{
+			
+			var c = document.getElementById("comp").style.display="none";
+			
 			var d1 = document.getElementById("dice5").style.display="none";
 		},1100);
 	}
 	else if(rann==6)
 	{
+		var c = document.getElementById("comp").style.display="block";
+		
 		var d1 = document.getElementById("dice6").style.display="block";
 		
 		setTimeout(()=>{
+			
+			var c = document.getElementById("comp").style.display="none";
+			
 			var d1 = document.getElementById("dice6").style.display="none";
 		},1100);
 	}
@@ -611,8 +639,7 @@ function dice2()
 	console.log(pyr2)
 	
 	pree = pyr2-rann
-	
-	//console.log(pree)
+
 	
 	var onee = document.getElementById("1")
 	
@@ -683,8 +710,6 @@ function dice2()
 	{
 		
 		var tvar2 = 20-rann
-		
-		//console.log("tvar2",tvar2)
 		
 		
 		pyr2=59
@@ -1016,13 +1041,11 @@ function dice2()
 		result.textContent="Computer Won"
 		
 		var btn1 = document.getElementById("rld").style.display="none";
-		
+	
 		
 		
 		var tvar11 = 100-rann
 		
-		console.log(tvar11)
-		console.log(pyr2)
 				
 		var ts = document.getElementById("100")
 
@@ -1040,7 +1063,8 @@ function dice2()
 
 		ts2 = ts.getElementsByTagName("span")
 		
-		ts2[1].style.display="block";	
+		ts2[1].style.display="block";
+	
 	}
 	
 	
@@ -1055,7 +1079,6 @@ function dice2()
 		
 		var ttss = document.getElementById(pree)
 		
-		//console.log(ttss)
 		
 		var ttss1 = ttss.getElementsByTagName("span")
 		
@@ -1073,6 +1096,98 @@ function dice2()
 
 },1000);//timeout ends	
 	
+	
+}
+
+function playa()
+{
+	
+	console.log("done")
+
+	const audio = new Audio()
+	
+	audio.src="D:\html\snake and ladder\Slide Whistle Up - Sound Effect(HD).mp3";
+	
+	audio.play();
+	
+	console.log(audio)
+		
+		
+	
+}
+
+//information bar codes
+
+
+//function to shrink and expand information container
+function hovera()
+{
+	var a = document.getElementById("sbta");
+	
+	a.textContent="INSTRUCTIONS";
+	
+	var b = document.getElementById("sbtad").style.width="140px";
+}
+
+function mout()
+{
+	var a = document.getElementById("sbta");
+	
+	a.textContent="INSTR..";
+	
+	var b = document.getElementById("sbtad").style.width="60px";
+}
+
+//creates the condition for displaying and hiding the information container
+var instr = 0
+
+//function that executes the work of displaying and hiding the information container
+function getintoinfo()
+{
+	instr++
+	
+	if(instr%2==1)
+	{
+		var d = document.getElementById("ins").style.display="block";
+		
+		var e = document.getElementById("insd").style.display="block";
+	}
+	else
+	{
+		var d = document.getElementById("ins").style.display="none";
+		
+		var e = document.getElementById("insd").style.display="none";
+	}
+	
+}
+
+
+//code dump
+
+
+
+/*
+function testp1()
+{
+	
+	if(pc1%2==1)
+	{
+		pc1++
+		
+		console.log("player one turn")
+		
+		dice1()
+	}
+	else
+	{
+		window.alert("It's player two turn")
+	}
+	
+}
+*/
+
+
+
 	
 	/*
 	var tss = document.getElementById(pyr2)
@@ -1100,83 +1215,3 @@ function dice2()
 	//console.log(tss2)
 	
 	*/
-	
-}
-function playa()
-{
-	
-	console.log("done")
-
-	const audio = new Audio()
-	
-	audio.src="D:\html\snake and ladder\Slide Whistle Up - Sound Effect(HD).mp3";
-	
-	audio.play();
-	
-	console.log(audio)
-		
-		
-	
-}
-
-/*
-function testp1()
-{
-	
-	if(pc1%2==1)
-	{
-		pc1++
-		
-		console.log("player one turn")
-		
-		dice1()
-	}
-	else
-	{
-		window.alert("It's player two turn")
-	}
-	
-}
-*/
-
-//information bar codes
-
-function hovera()
-{
-	var a = document.getElementById("sbta");
-	
-	a.textContent="INSTRUCTIONS";
-	
-	var b = document.getElementById("sbtad").style.width="140px";
-}
-
-function mout()
-{
-	var a = document.getElementById("sbta");
-	
-	a.textContent="INSTR..";
-	
-	var b = document.getElementById("sbtad").style.width="60px";
-}
-
-var instr = 0
-
-function getintoinfo()
-{
-	instr++
-	console.log(instr)
-	
-	if(instr%2==1)
-	{
-		var d = document.getElementById("ins").style.display="block";
-		
-		var e = document.getElementById("insd").style.display="block";
-	}
-	else
-	{
-		var d = document.getElementById("ins").style.display="none";
-		
-		var e = document.getElementById("insd").style.display="none";
-	}
-	
-}
