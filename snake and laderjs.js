@@ -1,20 +1,19 @@
-//shows the player one current location
+//two player mode
+
+//shows the location of player one
 var pyr1 = 0
 
-//shows the player two current location
+//shows the location of player two
 var pyr2 = 0
 
-
+//verifies the turn of the players
 var pc1 = 1
 
+//function to roll dice
 function dice1()
 {
 	
 	var ran=Math.floor((Math.random()*6)+1)
-
-	console.log("random",ran)
-	
-	console.log(pyr1)
 	
 	
 	if(ran==1)
@@ -34,6 +33,7 @@ function dice1()
 			var d1 = document.getElementById("dice2").style.display="none";
 		},1100);
 	}
+	
 	else if(ran==3)
 	{
 		var d1 = document.getElementById("dice3").style.display="block";
@@ -69,10 +69,10 @@ function dice1()
 
 	pyr1+=ran
 	
-	//shows the player one previous location
-	
+	//shows the previous location of player one
 	pre = pyr1-ran
 		
+	//setting time out for delay
 	setTimeout(()=>{
 	
 	var one = document.getElementById("1")
@@ -81,40 +81,48 @@ function dice1()
 	
 	one1[0].style.display="none";
 	
-	
+	//conditional statements for placing the pieces
 	if(pyr1==2)
 	{
 		
 		pyr1=23
 		
 		window.alert("player one got a ladder from 2 to 23");
-	
+		
+		//selecting the cell 23 for placing the piece
 		var ts = document.getElementById("23")
-
+	
+		//selecting the span tag within the cell 23
 		ts2 = ts.getElementsByTagName("span")
 		
+		//indexing the span tag (since we have two span tag i.e. one for player one and another for player two)
 		ts2[0].style.display="block";	
 		
+		//selecting previous cell for removing the piece
 		var tts = document.getElementById(pre)
 		
-		//console.log(tts)
-		
+		//selecting the span tag inside the previous cell
 		var tts1 = tts.getElementsByTagName("span")
 		
+		//indexing the span tag as did before
 		tts1[0].style.display="none";
-
+		
+		
+		//reconfirmation for avoiding mistakes
 		var ts = document.getElementById("23")
 
 		ts2 = ts.getElementsByTagName("span")
 		
 		ts2[0].style.display="block";	
 		
-		
+		/*
 		const audio = document.getElementById("aup");
 		
 		audio.volume=1;
 		
 		audio.play();
+		
+		*/
 		
 	}
 	else if(pyr1==6)
@@ -131,8 +139,7 @@ function dice1()
 		ts2[0].style.display="block";	
 		
 		var tts = document.getElementById(pre)
-		
-		//console.log(tts)
+	
 		
 		var tts1 = tts.getElementsByTagName("span")
 		
@@ -144,11 +151,14 @@ function dice1()
 		
 		ts2[0].style.display="block";
 		
+		/*
 		var audio = document.getElementById("aup")
 		
 		audio.muted=false
 		
 		audio.play();
+		
+		*/
 		
 		
 	}
@@ -156,8 +166,6 @@ function dice1()
 	{
 			
 		var tvar1 = 20-ran
-		
-		console.log("tvar1",tvar1)
 			
 		pyr1=59
 		
@@ -174,7 +182,7 @@ function dice1()
 		var tts1 = tts.getElementsByTagName("span")
 		
 		tts1[0].style.display="none";
-
+		
 		var ts = document.getElementById("59")
 
 		ts2 = ts.getElementsByTagName("span")
@@ -509,8 +517,6 @@ function dice1()
 		
 		var tts = document.getElementById(pre)
 		
-		//console.log(tts)
-		
 		var tts1 = tts.getElementsByTagName("span")
 		
 		tts1[0].style.display="none";
@@ -527,44 +533,11 @@ function dice1()
 },1000);//timeout ends
 
 
-
-	/*
-	var ts = document.getElementById(pyr1)
-
-	ts2 = ts.getElementsByTagName("span")
-	
-	ts2[0].style.display="block";	
-	
-	var tts = document.getElementById(pre)
-	
-	//console.log(tts)
-	
-	var tts1 = tts.getElementsByTagName("span")
-	
-	tts1[0].style.display="none";
-
-	var ts = document.getElementById(pyr1)
-
-	ts2 = ts.getElementsByTagName("span")
-	
-	ts2[0].style.display="block";	
-	
-	//console.log(ts)
-	
-	//console.log(ts2)
-	*/
-		
-}
-
-
-
-
-
+//function for dice of player two 
 function dice2()
 {
 	var rann=Math.floor((Math.random()*6)+1)
 
-	console.log(rann)
 	
 	
 	if(rann==1)
@@ -619,12 +592,10 @@ function dice2()
 	
 	
 	pyr2+=rann
-	
-	console.log(pyr2)
-	
+
+
 	pree = pyr2-rann
 	
-	//console.log(pree)
 	
 	var onee = document.getElementById("1")
 	
@@ -696,7 +667,6 @@ function dice2()
 		
 		var tvar2 = 20-rann
 		
-		//console.log("tvar2",tvar2)
 		
 		
 		pyr2=59
@@ -1033,8 +1003,6 @@ function dice2()
 		
 		var tvar11 = 100-rann
 		
-		console.log(tvar11)
-		console.log(pyr2)
 				
 		var ts = document.getElementById("100")
 
@@ -1066,8 +1034,7 @@ function dice2()
 		tss2[1].style.display="block";	
 		
 		var ttss = document.getElementById(pree)
-		
-		//console.log(ttss)
+
 		
 		var ttss1 = ttss.getElementsByTagName("span")
 		
@@ -1085,7 +1052,148 @@ function dice2()
 
 },1000);//timeout ends	
 	
+
 	
+}
+//function for playing audio(inactive)
+function playa()
+{
+	
+	console.log("done")
+
+	const audio = new Audio()
+	
+	audio.src="D:\html\snake and ladder\Slide Whistle Up - Sound Effect(HD).mp3";
+	
+	audio.play();
+	
+	console.log(audio)
+		
+		
+	
+}
+
+//functions for verifying the turns of the player
+
+function testp1()
+{
+	
+	if(pc1%2==1)
+	{
+		pc1++
+		
+		dice1()
+	}
+	else
+	{
+		window.alert("It's player two turn")
+	}
+	
+}
+
+function testp2()
+{
+	
+	if(pc1%2==0)
+	{
+		pc1++
+	
+		dice2()
+	}	
+	else
+	{
+		window.alert("It's player one turn")
+	}
+	
+}
+
+
+//css
+
+//functions for shrinking and expanding the information button
+function hovera()
+{
+	var a = document.getElementById("sbta");
+	
+	a.textContent="INSTRUCTIONS";
+	
+	var b = document.getElementById("sbtad").style.width="140px";
+}
+
+function mout()
+{
+	var a = document.getElementById("sbta");
+	
+	a.textContent="INSTR..";
+	
+	var b = document.getElementById("sbtad").style.width="60px";
+}
+
+//creates the condition for displaying and hiding information container
+var instr = 0
+
+//function executes the displaying and hiding the information container
+function getintoinfo()
+{
+	instr++
+	console.log(instr)
+	
+	if(instr%2==1)
+	{
+		var d = document.getElementById("ins").style.display="block";
+		
+		var e = document.getElementById("insd").style.display="block";
+	}
+	else
+	{
+		var d = document.getElementById("ins").style.display="none";
+		
+		var e = document.getElementById("insd").style.display="none";
+	}
+	
+}
+
+		
+}
+
+
+
+//code dump
+
+
+//player one
+
+
+	/*
+	var ts = document.getElementById(pyr1)
+
+	ts2 = ts.getElementsByTagName("span")
+	
+	ts2[0].style.display="block";	
+	
+	var tts = document.getElementById(pre)
+	
+	//console.log(tts)
+	
+	var tts1 = tts.getElementsByTagName("span")
+	
+	tts1[0].style.display="none";
+
+	var ts = document.getElementById(pyr1)
+
+	ts2 = ts.getElementsByTagName("span")
+	
+	ts2[0].style.display="block";	
+	
+	//console.log(ts)
+	
+	//console.log(ts2)
+	*/
+
+
+//player two
+
+
 	/*
 	var tss = document.getElementById(pyr2)
 
@@ -1112,102 +1220,3 @@ function dice2()
 	//console.log(tss2)
 	
 	*/
-	
-}
-
-function playa()
-{
-	
-	console.log("done")
-
-	const audio = new Audio()
-	
-	audio.src="D:\html\snake and ladder\Slide Whistle Up - Sound Effect(HD).mp3";
-	
-	audio.play();
-	
-	console.log(audio)
-		
-		
-	
-}
-
-
-function testp1()
-{
-	
-	if(pc1%2==1)
-	{
-		pc1++
-		
-		console.log("player one turn")
-		
-		dice1()
-	}
-	else
-	{
-		window.alert("It's player two turn")
-	}
-	
-}
-
-function testp2()
-{
-	
-	if(pc1%2==0)
-	{
-		pc1++
-		
-		console.log("player two turn")
-	
-		dice2()
-	}	
-	else
-	{
-		window.alert("It's player one turn")
-	}
-	
-}
-
-
-//css
-
-function hovera()
-{
-	var a = document.getElementById("sbta");
-	
-	a.textContent="INSTRUCTIONS";
-	
-	var b = document.getElementById("sbtad").style.width="140px";
-}
-
-function mout()
-{
-	var a = document.getElementById("sbta");
-	
-	a.textContent="INSTR..";
-	
-	var b = document.getElementById("sbtad").style.width="60px";
-}
-
-var instr = 0
-
-function getintoinfo()
-{
-	instr++
-	console.log(instr)
-	
-	if(instr%2==1)
-	{
-		var d = document.getElementById("ins").style.display="block";
-		
-		var e = document.getElementById("insd").style.display="block";
-	}
-	else
-	{
-		var d = document.getElementById("ins").style.display="none";
-		
-		var e = document.getElementById("insd").style.display="none";
-	}
-	
-}
